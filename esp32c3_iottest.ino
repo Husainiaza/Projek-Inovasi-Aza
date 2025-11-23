@@ -203,6 +203,10 @@ void setup() {
     Serial.println(F("SSD1306 allocation failed"));
     for(;;);
   }
+    //---relay off ---
+    digitalWrite(relay01,HIGH);
+    digitalWrite(relay02,HIGH);
+
 
   paparOled.clearDisplay();
   paparOled.setTextSize(1);
